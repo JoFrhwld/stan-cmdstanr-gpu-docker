@@ -3,7 +3,7 @@ version: "3.7"
 services:
 
   stan:
-    image: ghcr.io/jbris/stan-cmdstanr-gpu-docker:${CMDSTAN_VERSION}
+    image: ghcr.io/jofrhwld/stan-cmdstanr-gpu-docker:${CMDSTAN_VERSION}
     hostname: stan
     stop_grace_period: 10s
     restart: always
