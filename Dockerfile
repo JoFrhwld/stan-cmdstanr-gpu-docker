@@ -44,7 +44,7 @@ RUN install2.r --error --skipmissing --skipinstalled -n -1 \
   here \ 
   config \
   rstanarm \
-  brms \
+  #brms \
   loo \
   tidybayes \
   bayesplot \
@@ -57,5 +57,7 @@ RUN install2.r --error --skipmissing --skipinstalled -n -1 \
   reshape2 \
   testthat \ 
   targets
+
+RUN R -e 'remotes::install_github("paul-buerkner/brms")'
 
 RUN strip /usr/local/lib/R/site-library/*/libs/*.so
